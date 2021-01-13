@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title> My list </title>
+
+    </head>
+
+    <body>
+        <h1>Ma playlist 2020</h1>
+        <div class="container" style="display: flex; height: 100px;">
+            <div style="width: 50%">
+                <h3>Top des hits</h3>
+                
+                    <audio src="musiques/" controls id="audioPlayer">
+                    Sorry, your browser does not support HTML5 audio.
+                    </audio>
+                <p></p>
+                <ul id="playlist">
+                    <li><a href="musiques/Ma lov' - Tayc.mp3">1) Ma lov' - Tayc</a></li>
+                    <li><a href="musiques/Hamza - God Bless (feat. Damso).mp3">2) God Bless - Hamza, Damso</a> </li>
+                    <li><a href="musiques/Taste - Tyga.mp3">3) Taste - Tyga, Offset</a></li>
+                    <li><a href="musiques/Blanco - J Balvin.mp3">4) Blanco - J Balvin</a></li>
+                    <li><a href="musiques/ÉTINCELLES (feat. Alpha Wann, Nekfeu, S.Pri Noir).mp3">5) ETINCELLES - Sneazy,Alpha Wann, Nekfeu, S.Pri Noir</a></li>
+                    <li><a href="musiques/God's plan - Drake.mp3">6) God's Plan - Drake</a></li>
+                    <li><a href="musiques/TKN - ROSALIA, Travis Scott.mp3">7) TKN - ROSALIA, Travis Scott</a></li>
+                    <li><a href="musiques/Pookie - Aya Nakamura.mp3">8) Pookie - Aya Nakamura</a></li>
+                    <li><a href="musiques/O & S.mp3">9) O&S - Lefa, Caballero & JeanJass</a></li>
+                    <li><a href="musiques/Dopebwoy - Cartier ft. Chivv & 3robi.mp3">10) CARTIER - Dopebwoy, Andere Flex</a></li>
+                </ul>
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script src="audioPlayer.js"></script>
+                <script>
+                    // loads the audio player
+                    audioPlayer();
+                </script>
+            </div>
+            <div style="flex-grow: 1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jxFDmhVxVYU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+
+    </body> 
+</html>
