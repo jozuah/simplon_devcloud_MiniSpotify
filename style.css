@@ -56,6 +56,11 @@ body {
     margin-top: 75px;       
 }
 
+.playlist li {
+    background-color :black;
+    margin-bottom: 5px ;
+}
+
 .playlist li a
 {
     font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
@@ -64,9 +69,11 @@ body {
     margin-left: 10px; 
     text-decoration: none; 
     line-height: 2.0;  
+    /*background-color: black;*/
 }
 
 .playlist .current-song a
 {
     color:violet
 }
+
