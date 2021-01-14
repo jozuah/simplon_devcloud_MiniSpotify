@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title> Playlist de soirée </title>
+
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <ul>
+                <!-- ajouter la classe .active a la page utilisé pour indiquer
+                à l'user que c'ets la page courante-->
+                <li><a class="active" href="tophits.html">Top Hits</a></li>
+                <li><a href="chicharoyale.html">Chicha Royale</a></li>
+                <li><a href="chillbeats.html">Chill Beats</a></li>
+                <li><a href="favoris.html">Favoris</a></li>
+            </ul>
+        </nav> 
+        
+        <div class="container">
+            <div class = "playlist">
+                <ul>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Hamza - God Bless (feat. Damso).mp3" target="_blank" onclick="style='color:black'">1) God Bless - Hamza, Damso</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Ma lov' - Tayc.mp3" target="_blank" onclick="style='color:black'">2) Ma lov' - Tayc</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Taste - Tyga.mp3"target="_blank"onclick="style='color:black'">3) Taste - Tyga, Offset</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Blanco - J Balvin.mp3"target="_blank"onclick="style='color:black'">4) Blanco - J Balvin</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/ÉTINCELLES (feat. Alpha Wann, Nekfeu, S.Pri Noir).mp3"target="_blank" onclick="style='color:black'">5) ETINCELLES - Sneazy,Alpha Wann, Nekfeu, S.Pri Noir</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/God's plan - Drake.mp3"target="_blank" onclick="style='color:black'">6) God's Plan - Drake</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/TKN - ROSALIA, Travis Scott.mp3"target="_blank" onclick="style='color:black'">7) TKN - ROSALIA, Travis Scott</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Pookie - Aya Nakamura.mp3"target="_blank" onclick="style='color:black'">8) Pookie - Aya Nakamura</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/O & S.mp3"target="_blank" onclick="style='color:black'">9) O&S - Lefa, Caballero & JeanJass</a></li>
+                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Dopebwoy - Cartier ft. Chivv & 3robi.mp3"target="_blank" onclick="style='color:black'">10) CARTIER - Dopebwoy, Chivv,3robi</a></li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 75px;margin-left: 20px;">
+                <img src="images/godbless.jpeg" onclick="this.src='images/tayc.png'" width="500" height="500" alt="OnClick Godbless" />
+                <audio src="musiques/" width="500" controls id="audioPlayer">
+                    Votre navigateur ne supporte pas HTML5 audio patate.
+                </audio>
+            </div>
+        </div>
+    </body> 
+</html>
