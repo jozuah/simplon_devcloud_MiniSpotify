@@ -9,6 +9,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
   
 .navigation li {
@@ -24,6 +26,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
 }
   
 /* change la couleur quand on passe dessus */
@@ -37,6 +40,13 @@
   
 body {
     background-color: #333;
+
+}
+
+
+
+.container {
+    display:flex;
 
 }
 
