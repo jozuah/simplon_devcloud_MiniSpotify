@@ -1,57 +1,62 @@
-
-h1
-{
-    font-family: cursive;
-    color: rgb(255, 255, 255);
-    margin-left: 50px;
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+    background-color: #111;
+    /* Fixe la position de la nav bar en haut meme en scroll*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
-
-h3
-{
-    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
-    color: rgb(83, 83, 88);
-    margin-left: 90px;
-    font-size: x-large;
-}
-
-p
-{
-    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
-    color: white;
-    margin-left: 50px;
-    margin-top: 75px;
-}
-
-body 
-{
-    color:black;
-    background-color:black;
-    background-image:url(images/fondneutre.jpeg);
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
-audio 
-{
+  
+.navigation li {
     float: left;
-    margin-left:90px;
+    list-style-type: none;
+    background-color: #111; 
+}
+  
+.navigation li a {
+    display: block;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* change la couleur quand on passe dessus */
+.navigation li a:hover {
+    background-color: rgb(165, 165, 165);
 }
 
-#playlist
+.active {
+    background-color: rgb(165, 165, 165);
+}
+  
+body {
+    background-color: #333;
+
+}
+
+.playlist ul
 {
-    list-style: none;        
+    list-style: none; 
+    margin-top: 75px;       
 }
 
-#playlist li a
+.playlist li a
 {
     font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-size: x-large;
     color: white;
-    margin-left: 50px; 
+    margin-left: 10px; 
     text-decoration: none; 
     line-height: 2.0;  
 }
 
-#playlist .current-song a
+.playlist .current-song a
 {
     color:violet
 }
