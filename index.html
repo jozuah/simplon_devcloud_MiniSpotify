@@ -20,27 +20,36 @@
         </nav> 
         
         <div class="container">
-            <div class = "playlist">
+            <div id = "playlist">
                 <ul>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Hamza - God Bless (feat. Damso).mp3" target="_blank" onclick="style='color:black'">1) God Bless - Hamza, Damso</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Taste - Tyga.mp3"target="_blank" onclick="style='color:black'">3) Taste - Tyga, Offset</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Ma lov' - Tayc.mp3" target="_blank" onclick="style='color:black'">2) Ma lov' - Tayc</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Taste - Tyga.mp3"target="_blank"onclick="style='color:black'">3) Taste - Tyga, Offset</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Blanco - J Balvin.mp3"target="_blank"onclick="style='color:black'">4) Blanco - J Balvin</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/ÉTINCELLES (feat. Alpha Wann, Nekfeu, S.Pri Noir).mp3"target="_blank" onclick="style='color:black'">5) ETINCELLES - Sneazy,Alpha Wann, Nekfeu, S.Pri Noir</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/God's plan - Drake.mp3"target="_blank" onclick="style='color:black'">6) God's Plan - Drake</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/TKN - ROSALIA, Travis Scott.mp3"target="_blank" onclick="style='color:black'">7) TKN - ROSALIA, Travis Scott</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Pookie - Aya Nakamura.mp3"target="_blank" onclick="style='color:black'">8) Pookie - Aya Nakamura</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/O & S.mp3"target="_blank" onclick="style='color:black'">9) O&S - Lefa, Caballero & JeanJass</a></li>
-                    <li onclick="style='background-color: rgb(165, 165, 165)'"><a href="musiques/Dopebwoy - Cartier ft. Chivv & 3robi.mp3"target="_blank" onclick="style='color:black'">10) CARTIER - Dopebwoy, Chivv,3robi</a></li>
+                    <li><a href="musiques/Hamza - God Bless (feat. Damso).mp3" target="_blank">1) God Bless - Hamza, Damso</a></li>
+                    <li><a href="musiques/Ma lov' - Tayc.mp3" target="_blank">2) Ma lov' - Tayc</a></li>
+                    <li><a href="musiques/Taste - Tyga.mp3"target="_blank">3) Taste - Tyga, Offset</a></li>
+                    <li><a href="musiques/Blanco - J Balvin.mp3"target="_blank">4) Blanco - J Balvin</a></li>
+                    <li><a href="musiques/ÉTINCELLES (feat. Alpha Wann, Nekfeu, S.Pri Noir).mp3"target="_blank" >5) ETINCELLES - Sneazy,Alpha Wann, Nekfeu, S.Pri Noir</a></li>
+                    <li><a href="musiques/God's plan - Drake.mp3"target="_blank" >6) God's Plan - Drake</a></li>
+                    <li><a href="musiques/TKN - ROSALIA, Travis Scott.mp3"target="_blank" >7) TKN - ROSALIA, Travis Scott</a></li>
+                    <li><a href="musiques/Pookie - Aya Nakamura.mp3"target="_blank" >8) Pookie - Aya Nakamura</a></li>
+                    <li><a href="musiques/O & S.mp3"target="_blank" >9) O&S - Lefa, Caballero & JeanJass</a></li>
+                    <li><a href="musiques/Dopebwoy - Cartier ft. Chivv & 3robi.mp3"target="_blank" >10) CARTIER - Dopebwoy, Chivv,3robi</a></li>
                 </ul>
             </div>
 
+            <!-- penser a mettre les div en em auliau d'une taille fixe pour qu'elle s'adapte a tout typre d'écran -->
             <div style="margin-top: 75px;margin-left: 20px;">
-                <img src="images/godbless.jpeg" onclick="this.src='images/tayc.png'" width="500" height="500" alt="OnClick Godbless" />
-                <audio src="musiques/" width="500" controls id="audioPlayer">
+                <div class="img-wrap">
+                    <img src="images/godbless.jpeg" />
+                </div>
+                <audio src="musiques/" controls id="audioPlayer" style="display: flex; justify-content: center;">
                     Votre navigateur ne supporte pas HTML5 audio patate.
                 </audio>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script src="audioPlayer.js"></script>
+                <script>
+                    // loads the audio player
+                    audioPlayer();
+                </script>
             </div>
         </div>
     </body> 

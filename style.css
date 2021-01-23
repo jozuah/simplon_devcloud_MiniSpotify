@@ -47,21 +47,22 @@ body {
 
 .container {
     display:flex;
+    justify-content: center;
 
 }
 
-.playlist ul
+#playlist ul
 {
     list-style: none; 
     margin-top: 75px;       
 }
 
-.playlist li {
+#playlist li {
     background-color :black;
     margin-bottom: 5px ;
 }
 
-.playlist li a
+#playlist li a
 {
     font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
     font-size: x-large;
@@ -72,8 +73,32 @@ body {
     /*background-color: black;*/
 }
 
-.playlist .current-song a
+#playlist .current-song a
 {
-    color:violet
+    color:rgb(146, 88, 146)
 }
 
+#playlist .current-song ul
+{
+    background-color:aquamarine
+}
+
+.img-wrap {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  div > img {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
