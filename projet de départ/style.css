@@ -1,0 +1,57 @@
+
+h1
+{
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+
+h3
+{
+    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    color: rgb(83, 83, 88);
+    margin-left: 90px;
+    font-size: x-large;
+}
+
+p
+{
+    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 75px;
+}
+
+body 
+{
+    color:black;
+    background-color:black;
+    background-image:url(images/fondneutre.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+audio 
+{
+    float: left;
+    margin-left:90px;
+}
+
+#playlist
+{
+    list-style: none;        
+}
+
+#playlist li a
+{
+    font-family: Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    color: white;
+    margin-left: 50px; 
+    text-decoration: none; 
+    line-height: 2.0;  
+}
+
+#playlist .current-song a
+{
+    color:violet
+}
